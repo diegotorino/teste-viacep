@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29/07/2024 às 14:10
+-- Tempo de geração: 29/07/2024 às 22:42
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -32,7 +32,7 @@ CREATE TABLE `tabela` (
   `cep` varchar(8) DEFAULT NULL,
   `endereco` varchar(255) DEFAULT NULL,
   `bairro` varchar(255) DEFAULT NULL,
-  `cidade` int(11) DEFAULT NULL,
+  `cidade` varchar(11) DEFAULT NULL,
   `estado` varchar(2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -41,7 +41,9 @@ CREATE TABLE `tabela` (
 --
 
 INSERT INTO `tabela` (`id`, `cep`, `endereco`, `bairro`, `cidade`, `estado`) VALUES
-(4, '04657000', 'Avenida Yervant Kissajikian', 'Vila Constança', 0, 'SP');
+(4, '04657000', 'Avenida Yervant Kissajikian', 'Vila Constança', '0', 'SP'),
+(5, '04657000', 'Avenida Yervant Kissajikian', 'Vila Constança', '0', 'SP'),
+(6, '04658000', 'Rua Vicente Pereira de Assunção', 'Vila Constança', 'São Paulo', 'SP');
 
 --
 -- Índices para tabelas despejadas
@@ -61,7 +63,7 @@ ALTER TABLE `tabela`
 -- AUTO_INCREMENT de tabela `tabela`
 --
 ALTER TABLE `tabela`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
