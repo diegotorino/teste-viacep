@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10;
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container {
+    border: 1px solid;
+    border-color: #d8d8d8;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.form-group{
+    font-weight: 500;
+}
+
+.img-logo {
+    margin: 0;
+}
